@@ -19,6 +19,7 @@
 }
 
 .slider {
+  display: flex;
   position: relative;
   width: 60%;
   height: 60%;
@@ -28,7 +29,7 @@
 }
 
 .items-wrapper {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -79,4 +80,21 @@
 
 .slider-arrow.down {
   bottom: 10px;
+}
+
+
+.sidebar {
+  position: relative;
+  height: 100%;
+  width: 20%;
+}
+
+.thumbnail {
+  height: 20%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
