@@ -21,7 +21,12 @@ for (let i = 0; i < arrayImgs.length; i++ ) {
   itemsCollector.innerHTML += `<img src="${image}" class="item hide">`;
 };
 
+
+
 const images = document.getElementsByClassName('item');
+
+document.querySelector('.item').classList.remove('hide');
+
 console.log(images);
 
 // btnNext.addEventListener('click', function(){
