@@ -14,6 +14,8 @@
 
 .container {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .slider {
@@ -22,6 +24,7 @@
   height: 60%;
   margin: 0 auto;
   background-color: brown;
+  /* aspect-ratio: 16 / 9; */
 }
 
 .items-wrapper {
@@ -38,7 +41,7 @@
 
 
 
-/* 1. 
+/* 5. 
 */
 
 .hide {

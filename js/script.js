@@ -15,6 +15,9 @@ const btnNext = document.querySelector('.down');
 
 let counterImg = 0;
 
+/* 4.
+*/
+
 for (let i = 0; i < arrayImgs.length; i++ ) {
 
   let image = arrayImgs[i];
@@ -28,17 +31,33 @@ for (let i = 0; i < arrayImgs.length; i++ ) {
 const images = document.getElementsByClassName('item');
 
 
+/* 6.
+*/
+console.log (counterImg);
 
 btnNext.addEventListener('click', function(){
   
-  images[counterImg].classList.remove('active'); 
+  if (counterImg < (arrayImgs.length - 1)) {
+
+    images[counterImg].classList.remove('active'); 
   
-  counterImg++;
-  
-  images[counterImg].classList.add('active');
-  
+    counterImg++;
+    
+    images[counterImg].classList.add('active');
+
+  } else if (counterImg == (arrayImgs.length - 1)) {
+
+    images[counterImg].classList.remove('active'); 
+
+    counterImg = 0;
+
+    images[counterImg].classList.add('active');
+
+  }
 
 });
+
+// if(counterImg == arrayImgs.length) counterImg = 0;
 
 btnPrev.addEventListener('click', function(){
   
