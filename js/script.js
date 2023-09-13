@@ -19,10 +19,11 @@ for (let i = 0; i < arrayImgs.length; i++ ) {
   image = arrayImgs[i];
 
   itemsCollector.innerHTML += `<img src="${image}" class="item">`;
-
-  if (i === 0) document.querySelector('.item').classList.add('active');
-
-};
+  
+  
+    if (i === 0) document.querySelector('.item').classList.add('active');
+  };
+  console.log(document.querySelector('.item').classList);
 
 
 

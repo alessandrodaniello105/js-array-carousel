@@ -45,7 +45,7 @@
   display: none;
 }
 
-.active {
+.item.active {
   display: block;
 }
 
