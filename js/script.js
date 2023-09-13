@@ -18,18 +18,19 @@ let image = 0;
 for (let i = 0; i < arrayImgs.length; i++ ) {
   image = arrayImgs[i];
 
-  itemsCollector.innerHTML += `<img src="${image}" class="item hide">`;
+  itemsCollector.innerHTML += `<img src="${image}" class="item">`;
+
+  if (i === 0) document.querySelector('.item').classList.add('active');
+
 };
 
 
 
 const images = document.getElementsByClassName('item');
 
-document.querySelector('.item').classList.remove('hide');
+// document.querySelector('.item').classList.remove('hide');
 
-console.log(images);
-
-// btnNext.addEventListener('click', function(){
-
-// });
+btnNext.addEventListener('click', function(){
+  console.log(image);
+});
 
