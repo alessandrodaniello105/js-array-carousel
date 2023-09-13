@@ -1,3 +1,7 @@
+:root {
+  --arrow-wh: 35px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +17,11 @@
 }
 
 .slider {
+  position: relative;
   width: 60%;
   height: 60%;
   margin: 0 auto;
+  background-color: brown;
 }
 
 .items-wrapper {
@@ -27,4 +33,40 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/* 1. 
+*/
+.hide {
+  display: none;
+}
+
+.slider-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--arrow-wh);
+  height: var(--arrow-wh);
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 50%;
+  font-size: 23px;
+  color: white;
+  text-align: center;
+  line-height: var(--arrow-wh);
+  cursor: pointer;
+}
+
+.slider-arrow.up {
+  top: 10px;
+}
+
+.slider-arrow.up:hover,
+.slider-arrow.down:hover {
+  background-color: white;
+  color: red;
+}
+
+.slider-arrow.down {
+  bottom: 10px;
 }

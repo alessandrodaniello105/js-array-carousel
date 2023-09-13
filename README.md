@@ -2,7 +2,7 @@ Carosello Mono Array
 ===
 
 1. Creiamo un container nell'html con all'interno le immagini statiche.
-1. Creiamo la classe hide e le frecce dello slider
+1. Creiamo la classe hide e le frecce dello slider, e definiamole anche nel nostro script
 1. Creiamo un array vuoto per le nostre immagini
 1. Oscuriamo le immagini statiche e le aggiungiamo dinamicamente con JS
 1. Rendiamo funzionanti i bottoni per slidare
