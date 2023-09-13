@@ -10,10 +10,14 @@ const arrayImgs = [
 ];
 
 const itemsCollector = document.querySelector('.items-wrapper');
+const thumbnailImg = document.querySelector('.thumbnail')
+
 const btnPrev = document.querySelector('.up');
 const btnNext = document.querySelector('.down');
 
 let counterImg = 0;
+
+
 
 /* 4.
 */
@@ -23,7 +27,8 @@ for (let i = 0; i < arrayImgs.length; i++ ) {
   let image = arrayImgs[i];
 
   itemsCollector.innerHTML += `<img src="${image}" class="item">`;
-    
+  thumbnailImg.innerHTML += `<img src="${image}" class="item">`;
+  
   if (i === 0) document.querySelector('.item').classList.add('active');
 
 };
@@ -58,22 +63,6 @@ btnNext.addEventListener('click', function(){
 
 
 btnPrev.addEventListener('click', function(){
-  /*
-  images[counterImg].classList.remove('active'); 
-
-  if (counterImg == 0) {
-
-    counterImg = (arrayImgs.length - 1);
-
-  } else {
-
-    counterImg--;
-
-  }
-  
-  images[counterImg].classList.add('active');
-  */
-
   if (counterImg > 0) {
 
     images[counterImg].classList.remove('active'); 
