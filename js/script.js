@@ -8,20 +8,23 @@ const arrayImgs = [
   'img/04.webp',
   'img/05.webp'
 ];
-console.log(arrayImgs.length);
 
 const itemsCollector = document.querySelector('.items-wrapper');
 const btnPrev = document.querySelector('.up');
 const btnNext = document.querySelector('.down');
 
+let image = 0;
+
 for (let i = 0; i < arrayImgs.length; i++ ) {
-  let image = arrayImgs[i];
-  itemsCollector.innerHTML = `<img src="${image}" class="hide item">`;
-  console.log(itemsCollector.innerHTML);
+  image = arrayImgs[i];
+
+  itemsCollector.innerHTML += `<img src="${image}" class="item hide">`;
 };
 
+const images = document.getElementsByClassName('item');
+console.log(images);
 
+// btnNext.addEventListener('click', function(){
 
-btnNext.addEventListener('click', function(){
-  
-});
+// });
+
