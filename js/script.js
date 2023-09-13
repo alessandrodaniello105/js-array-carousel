@@ -13,25 +13,40 @@ const itemsCollector = document.querySelector('.items-wrapper');
 const btnPrev = document.querySelector('.up');
 const btnNext = document.querySelector('.down');
 
-let image = 0;
+let counterImg = 0;
 
 for (let i = 0; i < arrayImgs.length; i++ ) {
-  image = arrayImgs[i];
+
+  let image = arrayImgs[i];
 
   itemsCollector.innerHTML += `<img src="${image}" class="item">`;
-  
-  
-    if (i === 0) document.querySelector('.item').classList.add('active');
-  };
-  console.log(document.querySelector('.item').classList);
+    
+  if (i === 0) document.querySelector('.item').classList.add('active');
 
-
+};
 
 const images = document.getElementsByClassName('item');
 
-// document.querySelector('.item').classList.remove('hide');
+
 
 btnNext.addEventListener('click', function(){
-  console.log(image);
+  
+  images[counterImg].classList.remove('active'); 
+  
+  counterImg++;
+  
+  images[counterImg].classList.add('active');
+  
+
+});
+
+btnPrev.addEventListener('click', function(){
+  
+  images[counterImg].classList.remove('active'); 
+  
+  counterImg--;
+  
+  images[counterImg].classList.add('active');
+
 });
 
