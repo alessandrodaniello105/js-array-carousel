@@ -24,7 +24,7 @@
   width: 60%;
   height: 60%;
   margin: 0 auto;
-  background-color: brown;
+  /* background-color: brown; */
   /* aspect-ratio: 16 / 9; */
 }
 
@@ -86,6 +86,7 @@
   position: relative;
   height: 100%;
   width: 20%;
+  background-color: black;
 }
 
 .thumbnail {
@@ -97,8 +98,10 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: .5;
 }
 
 .item-thumb.active {
-  border: inset;
+  border: 2px solid white;
+  opacity: 1;
 }
